@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\repositories\\person\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\repositories\\person\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +14,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "4ae92e8c-8b2a-4c7c-b3bd-135dfb82e826",
+        "Display": 1,
+        "X": 115,
+        "Y": 413,
+        "Width": 1553,
+        "Height": 722,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Program.cs",
-              "RelativeDocumentMoniker": "Uxcomex\\Program.cs",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Program.cs",
-              "RelativeToolTip": "Uxcomex\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAswCEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T01:08:02.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\Index.cshtml",
-              "RelativeDocumentMoniker": "Uxcomex\\Views\\Person\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\Index.cshtml",
-              "RelativeToolTip": "Uxcomex\\Views\\Person\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-13T00:51:46.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "Uxcomex\\Controllers\\PersonController.cs",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "Uxcomex\\Controllers\\PersonController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Repositories\\Person\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "Uxcomex\\Repositories\\Person\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Repositories\\Person\\PersonRepository.cs",
+              "RelativeToolTip": "Uxcomex\\Repositories\\Person\\PersonRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T00:44:32.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonService.cs",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Services\\PersonService.cs",
-              "RelativeDocumentMoniker": "Uxcomex\\Services\\PersonService.cs",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Services\\PersonService.cs",
-              "RelativeToolTip": "Uxcomex\\Services\\PersonService.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAA0wFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T00:11:15.418Z",
+              "WhenOpened": "2025-01-13T17:23:49.077Z",
               "EditorCaption": ""
             }
           ]

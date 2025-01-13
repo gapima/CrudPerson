@@ -8,9 +8,9 @@ namespace Uxcomex.Controllers
     public class PersonController : Controller 
     {
         private readonly ILogger<PersonController> _logger;
-        private readonly IPersonService _personService;
+        private readonly PersonService _personService;
 
-        public PersonController(ILogger<PersonController> logger, IPersonService personService)
+        public PersonController(ILogger<PersonController> logger, PersonService personService)
         {
             _logger = logger;
             _personService = personService;

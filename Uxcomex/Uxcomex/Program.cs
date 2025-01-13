@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Uxcomex.Data;
+using Uxcomex.Repositories.Person;
 using Uxcomex.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,8 +11,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("StringConnection"));
 });
-
-builder.Services.AddScoped<IPersonService, PersonService>();
+builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddScoped<PersonService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

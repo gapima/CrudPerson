@@ -1,5 +1,4 @@
-﻿@using Uxcomex.Dto
-@model IEnumerable<PersonDto>
+﻿@model IEnumerable<PersonModel>
 
 <div class="container">
 	<button type="submit">Add</button>
@@ -9,13 +8,8 @@
 			@foreach (var person in Model)
 			{
 				<div class="row">
-					<p>@person.Name</p>
-				</div
-				<div class="row">
-					<p>@person.Cpf</p>
-				</div>
-				<div class="row">
-					<p>@person.PhoneNumber</p>
+					<p>@person.Name @person.Cpf @person.PhoneNumber</p>
+					
 				</div>
 			}
 		}
