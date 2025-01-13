@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gapim\\source\\repos\\Uxcomex\\Uxcomex\\Uxcomex.csproj": {}
+    "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Uxcomex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gapim\\source\\repos\\Uxcomex\\Uxcomex\\Uxcomex.csproj": {
+    "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Uxcomex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gapim\\source\\repos\\Uxcomex\\Uxcomex\\Uxcomex.csproj",
+        "projectUniqueName": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Uxcomex.csproj",
         "projectName": "Uxcomex",
-        "projectPath": "C:\\Users\\gapim\\source\\repos\\Uxcomex\\Uxcomex\\Uxcomex.csproj",
+        "projectPath": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Uxcomex.csproj",
         "packagesPath": "C:\\Users\\gapim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gapim\\source\\repos\\Uxcomex\\Uxcomex\\obj\\",
+        "outputPath": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,6 +54,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",

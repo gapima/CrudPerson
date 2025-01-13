@@ -1,14 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using Uxcomex.Data;
+using Uxcomex.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("StringConnection"));
 });
+
+builder.Services.AddScoped<IPersonService, PersonService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,6 +31,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Person}/{action=Index}/{id?}");
 
 app.Run();

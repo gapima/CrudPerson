@@ -1,0 +1,23 @@
+﻿@using Uxcomex.Dto
+@model IEnumerable<PersonDto>
+
+<div class="container">
+	<button type="submit">Add</button>
+	<div>
+		@if(Model.Count() > 0)
+		{
+			@foreach (var person in Model)
+			{
+				<div class="row">
+					<p>@person.Name</p>
+				</div
+				<div class="row">
+					<p>@person.Cpf</p>
+				</div>
+				<div class="row">
+					<p>@person.PhoneNumber</p>
+				</div>
+			}
+		}
+		</div>
+	</div>
