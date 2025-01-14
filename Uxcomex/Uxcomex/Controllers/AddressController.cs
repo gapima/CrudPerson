@@ -37,5 +37,12 @@ namespace Uxcomex.Controllers
 
             return RedirectToAction("UpdatePerson", "Person", address);
         }
+        public async Task<IActionResult> Delete(int id)
+        {
+            var address = await _AddressService.GetAddressById(id);
+            await _AddressService.DeleteAddress(id);
+            var person = await _personService.GetPersonById(address.PersonId);
+            return RedirectToAction("UpdatePerson", "Person", person);
+        }
     }
 }
