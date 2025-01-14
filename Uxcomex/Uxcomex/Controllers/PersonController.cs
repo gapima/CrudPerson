@@ -9,13 +9,11 @@ namespace Uxcomex.Controllers
     {
         private readonly ILogger<PersonController> _logger;
         private readonly PersonService _personService;
-        private readonly AddressService _addressService;
 
-        public PersonController(ILogger<PersonController> logger, PersonService personService, AddressService addressService)
+        public PersonController(ILogger<PersonController> logger, PersonService personService)
         {
             _logger = logger;
             _personService = personService;
-            _addressService = addressService;
         }
         public async Task<IActionResult> Index()
         {
@@ -27,8 +25,10 @@ namespace Uxcomex.Controllers
         {
             return View();
         }
-        public ActionResult UpdatePerson(PersonModel person)
+        public async Task<IActionResult> UpdatePerson(PersonModel personModel, AddressModel address)
         {
+            var person = await _personService.GetPersonById(address.PersonId);
+
             return View(person);
         }
         public async Task<IActionResult> Create(PersonDto personDto)
@@ -41,11 +41,11 @@ namespace Uxcomex.Controllers
             await _personService.UpdatePerson(personDto);
             return RedirectToAction("Index");
         }
-        public async Task<IActionResult> GetAllAddressByPersonId(int personId)
-        {
-            var addresses = await _addressService.GetAllAddressByPersonId(personId);
+        //public async Task<IActionResult> GetAllAddressByPersonId(int personId)
+        //{
+        //    var addresses = await _addressService.GetAllAddressByPersonId(personId);
 
-            return RedirectToAction("UpdatePerson", addresses);
-        }
+        //    return RedirectToAction("UpdatePerson", addresses);
+        //}
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Uxcomex.Models
 {
-    public class AddressModel 
+    public class AddressModel
     {
         public int Id { get; set; }
         public string StreetAddress { get; set; }
@@ -11,4 +11,3 @@
         public PersonModel Person { get; set; }
     }
 }
- 

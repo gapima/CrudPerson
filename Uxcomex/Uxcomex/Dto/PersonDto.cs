@@ -6,6 +6,6 @@
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
         public string Cpf { get; set; }
-        public IEnumerable<AddressDto> Addresses { get; set; } = new List<AddressDto>();
+        public IEnumerable<AddressDto> Addresses { get; set; }
     }
 }

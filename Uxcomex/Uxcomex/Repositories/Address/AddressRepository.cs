@@ -11,18 +11,22 @@ namespace Uxcomex.Repositories.Address
     {
         private readonly ApplicationDbContext _context;
         private readonly IDbConnection _connection;
-        public  AddressRepository(ApplicationDbContext context, IConfiguration configuration)
+        public AddressRepository(ApplicationDbContext context, IConfiguration configuration)
         {
             _context = context;
             _connection = new SqlConnection(configuration.GetConnectionString("StringConnection"));
         }
-        public async Task CreateAddress(AddressDto addressDto)
+        public async Task<AddressModel> CreateAddress(AddressDto addressDto)
         {
             try
             {
                 var query = @"INSERT INTO Tb_Address
+                OUTPUT INSERTED.Id, INSERTED.StreetAddress, INSERTED.Zipcode, INSERTED.City, INSERTED.State, INSERTED.PersonId
                 VALUES (@StreetAddress, @Zipcode, @City, @State, @PersonId)";
-                await _connection.ExecuteAsync(query, addressDto);
+                var address = await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, addressDto);
+                if (address == null)
+                    throw new Exception();
+                return address;
             }
             catch (Exception ex)
             {
@@ -35,7 +39,7 @@ namespace Uxcomex.Repositories.Address
             try
             {
                 var query = @"DELETE FROM Tb_Address WHERE id = @id";
-                await _connection.ExecuteAsync(query, new {Id = id});
+                await _connection.ExecuteAsync(query, new { Id = id });
             }
             catch (Exception ex)
             {
@@ -48,7 +52,7 @@ namespace Uxcomex.Repositories.Address
             try
             {
                 var query = @"SELECT * FROM Tb_Address WHERE id = @id";
-                var address =  await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, new { Id = id});
+                var address = await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, new { Id = id });
                 if (address == null)
                     throw new Exception();
                 return address;
@@ -64,7 +68,7 @@ namespace Uxcomex.Repositories.Address
             try
             {
                 var query = @"SELECT * FROM Tb_Address WHERE PersonId = @PersonId";
-                var address = await _connection.QueryAsync<AddressModel>(query, new {personId =  personId});
+                var address = await _connection.QueryAsync<AddressModel>(query, new { personId = personId });
                 if (address == null)
                     throw new Exception();
                 return address;
@@ -85,7 +89,7 @@ namespace Uxcomex.Repositories.Address
 					City = @City,
 					State = @State
 				WHERE Id = @Id and PersonId = @PersonID";
-                var address = await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, new {  id = addressDto.id, personId = addressDto.PersonId});
+                var address = await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, new { id = addressDto.id, personId = addressDto.PersonId });
                 if (address == null)
                     throw new Exception();
                 return address;

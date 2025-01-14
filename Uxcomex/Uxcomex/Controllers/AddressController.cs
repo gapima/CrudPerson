@@ -9,11 +9,13 @@ namespace Uxcomex.Controllers
     {
         private readonly ILogger<AddressController> _logger;
         private readonly AddressService _AddressService;
+        private readonly PersonService _personService;
 
-        public AddressController(ILogger<AddressController> logger, AddressService AddressService)
+        public AddressController(ILogger<AddressController> logger, AddressService AddressService, PersonService personService)
         {
             _logger = logger;
             _AddressService = AddressService;
+            _personService = personService;
         }
         public ActionResult CreateAddress()
         {
@@ -23,9 +25,11 @@ namespace Uxcomex.Controllers
         {
             return View(Address);
         }
-        public async Task Create(AddressDto AddressDto)
+        public async Task<IActionResult> Create(AddressDto AddressDto)
         {
-            await _AddressService.CreateAddress(AddressDto);
+            var address = await _AddressService.CreateAddress(AddressDto);
+            //var person = await _personService.GetPersonById(address.PersonId);
+            return RedirectToAction("UpdatePerson", "Person", address);
 
         }
         public async Task<IActionResult> Update(AddressDto AddressDto)

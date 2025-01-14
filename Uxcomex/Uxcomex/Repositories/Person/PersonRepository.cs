@@ -1,7 +1,6 @@
-﻿using Dapper;
+﻿using System.Data;
+using Dapper;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Data;
 using Uxcomex.Data;
 using Uxcomex.Dto;
 using Uxcomex.Models;
@@ -64,11 +63,18 @@ namespace Uxcomex.Repositories.Person
 
             try
             {
-                var query = @"SELECT * FROM Tb_Person WHERE id = @id";
-
+                var query = @"SELECT *
+                FROM Tb_Person
+                WHERE id = @id";
                 var person = await _connection.QueryFirstOrDefaultAsync<PersonModel>(query, new { Id = id });
+
                 if (person == null)
                     throw new Exception();
+                var queryAdrees = @"SELECT *
+                FROM Tb_Address
+                WHERE PersonId = @id";
+                var address = await _connection.QueryAsync<AddressModel>(queryAdrees, new { id = id });
+                person.Addresses = address;
                 return person;
             }
             catch (Exception ex)

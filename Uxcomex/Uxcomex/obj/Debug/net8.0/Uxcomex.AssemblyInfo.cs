@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Uxcomex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93acca330c8cd1eb73546ffd34fac0433cadd163")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+941af48dc1e2493e153ab7e40fcd08c5ec9be787")]
 [assembly: System.Reflection.AssemblyProductAttribute("Uxcomex")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Uxcomex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
