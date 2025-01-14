@@ -5,8 +5,8 @@ namespace Uxcomex.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public  int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         public string Cpf { get; set; }
-        public ICollection<AddressModel> Addresses { get; set; } = new List<AddressModel>();
+        public IEnumerable<AddressModel> Addresses { get; set; } = new List<AddressModel>();
     }
 };

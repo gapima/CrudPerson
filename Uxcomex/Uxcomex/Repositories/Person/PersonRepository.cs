@@ -17,13 +17,17 @@ namespace Uxcomex.Repositories.Person
             _context = context;
             _connection = new SqlConnection(configuration.GetConnectionString("StringConnection"));
         }
-        public async Task AddPerson(PersonDto personDto)
+        public async Task<PersonModel> CreatePerson(PersonDto personDto)
         {
             try
             {
                 var query = @"INSERT INTO Tb_Person
-				VALUES (@Name, @PhoneNumber, @Cpf)";
-                await _connection.ExecuteAsync(query, personDto);
+                OUTPUT INSERTED.Id, INSERTED.Name, INSERTED.PhoneNumber, INSERTED.Cpf
+    			VALUES (@Name, @PhoneNumber, @Cpf);";
+                var person = await _connection.QuerySingleOrDefaultAsync<PersonModel>(query, personDto);
+                if (person == null)
+                    throw new Exception();
+                return person;
             }
             catch (Exception ex)
             {
@@ -81,8 +85,9 @@ namespace Uxcomex.Repositories.Person
 				SET Name = @Name,
 					PhoneNumber = @PhoneNumber,
 					Cpf = @Cpf 
+                 OUTPUT INSERTED.Id, INSERTED.Name, INSERTED.PhoneNumber, INSERTED.Cpf
 				WHERE Id = @Id";
-                var person = await _connection.QueryFirstOrDefaultAsync<PersonModel>(query, new { Id = personDto.Id });
+                var person = await _connection.QueryFirstOrDefaultAsync<PersonModel>(query, personDto);
 
                 if (person == null)
                     throw new Exception();

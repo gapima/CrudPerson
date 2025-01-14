@@ -28,12 +28,20 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/gapim/myprojects/CrudPerson/Uxcomex/Uxcomex/Views/Person/CreatePerson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXENyZWF0ZVBlcnNvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gapim/myprojects/CrudPerson/Uxcomex/Uxcomex/Views/Person/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gapim/myprojects/CrudPerson/Uxcomex/Uxcomex/Views/Person/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gapim/myprojects/CrudPerson/Uxcomex/Uxcomex/Views/Person/UpdatePerson.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXFVwZGF0ZVBlcnNvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gapim/myprojects/CrudPerson/Uxcomex/Uxcomex/Views/Shared/_ValidationScriptsPartial.cshtml]

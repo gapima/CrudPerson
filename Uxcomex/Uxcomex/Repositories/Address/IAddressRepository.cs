@@ -7,7 +7,7 @@ namespace Uxcomex.Repositories.Address
     {
         Task<AddressModel> GetAddressById(int id);
         Task<IEnumerable<AddressModel>> GetAllAddressByPersonId(int personId);
-        Task AddAddress(AddressDto addressDto);
+        Task CreateAddress(AddressDto addressDto);
         Task<AddressModel> UpdateAddress(AddressDto address);
         Task DeleteAddress(int id);
     }

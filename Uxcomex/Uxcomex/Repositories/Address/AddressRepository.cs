@@ -16,7 +16,7 @@ namespace Uxcomex.Repositories.Address
             _context = context;
             _connection = new SqlConnection(configuration.GetConnectionString("StringConnection"));
         }
-        public async Task AddAddress(AddressDto addressDto)
+        public async Task CreateAddress(AddressDto addressDto)
         {
             try
             {

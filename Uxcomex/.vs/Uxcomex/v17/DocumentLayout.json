@@ -1,57 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\repositories\\person\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\repositories\\person\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "4ae92e8c-8b2a-4c7c-b3bd-135dfb82e826",
-        "Display": 1,
-        "X": 115,
-        "Y": 413,
-        "Width": 1553,
-        "Height": 722,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Repositories\\Person\\PersonRepository.cs",
-              "RelativeDocumentMoniker": "Uxcomex\\Repositories\\Person\\PersonRepository.cs",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Repositories\\Person\\PersonRepository.cs",
-              "RelativeToolTip": "Uxcomex\\Repositories\\Person\\PersonRepository.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T17:23:49.077Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

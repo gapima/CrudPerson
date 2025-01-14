@@ -11,9 +11,9 @@ namespace Uxcomex.Services
         {
             _addressRepository = addressRepository;
         }
-        public async Task  AddAddress(AddressDto addressDto)
+        public async Task  CreateAddress(AddressDto addressDto)
         {
-            await _addressRepository.AddAddress(addressDto);
+            await _addressRepository.CreateAddress(addressDto);
         }
         public async Task DeleteAddress(int id)
         {

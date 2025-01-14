@@ -1,17 +1,20 @@
 ﻿@model IEnumerable<PersonModel>
 
 <div class="container">
-	<button type="submit">Add</button>
-	<div>
-		@if(Model.Count() > 0)
-		{
-			@foreach (var person in Model)
-			{
-				<div class="row">
-					<p>@person.Name @person.Cpf @person.PhoneNumber</p>
-					
-				</div>
-			}
-		}
-		</div>
-	</div>
+    <a href="@Url.Action("CreatePerson", "Person")" class="btn btn-primary">Add</a>
+    <div>
+        @if (Model.Any())
+        {
+            foreach (var person in Model)
+            {
+                <div class="row">
+                    <p>@person.Name (@person.Cpf) - @person.PhoneNumber</p>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No records found.</p>
+        }
+    </div>
+</div>

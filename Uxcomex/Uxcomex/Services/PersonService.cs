@@ -16,9 +16,9 @@ namespace Uxcomex.Services
 		{ 
 			_personRepository = personRepository;
 		}
-		public async Task AddPerson(PersonDto personDto)
+		public async Task<PersonModel> CreatePerson(PersonDto personDto)
 		{
-			await _personRepository.AddPerson(personDto);
+			return await _personRepository.CreatePerson(personDto);
         }
         public async Task DeletePerson(int id)
 		{
