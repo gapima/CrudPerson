@@ -1,5 +1,4 @@
 ﻿@model PersonModel
-<!-- Modal para cadastro de novo endereço -->
 <div class="modal fade" id="addAddressModal" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -9,12 +8,11 @@
             </div>
             <div class="modal-body">
                 <form id="addAddressForm" asp-controller="Address" asp-action="Create" method="post">
-                    <!-- Campo oculto para associar o endereço à pessoa -->
                     <input type="hidden" name="PersonId" value="@Model.Id" />
 
                     <div class="form-group">
                         <label for="ZipCode">Zip Code</label>
-                        <input type="text" class="form-control" id="ZipCode" name="ZipCode" pattern="^\d{5}-\d{3}$" required title="Por favor, insira um CEP válido no formato XXXXXXXX" required />
+                        <input type="text" class="form-control" id="ZipCode" name="ZipCode" required />
                     </div>
                     <div class="form-group">
                         <label for="StreetAddress">Street Address</label>

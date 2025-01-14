@@ -19,6 +19,10 @@ namespace Uxcomex.Services
         {
             await _personRepository.DeletePerson(id);
         }
+        public async Task DeleteAddressFromPerson(int personId)
+        {
+            await _personRepository.DeleteAddressFromPerson(personId);
+        }
         public async Task<IEnumerable<PersonModel>> GetAllPersons()
         {
             return await _personRepository.GetAllPersons();

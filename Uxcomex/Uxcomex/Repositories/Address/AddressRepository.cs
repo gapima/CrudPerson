@@ -67,7 +67,7 @@ namespace Uxcomex.Repositories.Address
         {
             try
             {
-                var query = @"SELECT * FROM Tb_Address WHERE PersonId = @PersonId";
+                var query = @"SELECT * FROM Tb_Address WHERE PersonId = @PersonId ORDER BY Id Desc";
                 var address = await _connection.QueryAsync<AddressModel>(query, new { personId = personId });
                 if (address == null)
                     throw new Exception();

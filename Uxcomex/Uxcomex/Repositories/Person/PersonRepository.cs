@@ -45,12 +45,24 @@ namespace Uxcomex.Repositories.Person
                 throw new Exception(ex.Message);
             }
         }
+        public async Task DeleteAddressFromPerson(int personId)
+        {
+            try
+            {
+                var query = @"DELETE FROM Tb_Address WHERE PersonId = @personId";
+                await _connection.ExecuteAsync(query, new { PersonId = personId });
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
         public async Task<IEnumerable<PersonModel>> GetAllPersons()
         {
 
             try
             {
-                var query = "SELECT * FROM Tb_Person";
+                var query = "SELECT * FROM Tb_Person ORDER BY Id Desc";
                 return await _connection.QueryAsync<PersonModel>(query);
             }
             catch (Exception ex)
@@ -72,7 +84,7 @@ namespace Uxcomex.Repositories.Person
                     throw new Exception();
                 var queryAdrees = @"SELECT *
                 FROM Tb_Address
-                WHERE PersonId = @id";
+                WHERE PersonId = @id ORDER By Id Desc";
                 var address = await _connection.QueryAsync<AddressModel>(queryAdrees, new { id = id });
                 person.Addresses = address;
                 return person;

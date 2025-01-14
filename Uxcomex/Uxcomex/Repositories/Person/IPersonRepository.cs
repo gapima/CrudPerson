@@ -10,6 +10,6 @@ namespace Uxcomex.Repositories.Person
         Task<PersonModel> CreatePerson(PersonDto personDto);
         Task<PersonModel> UpdatePerson(PersonDto personDto);
         Task DeletePerson(int id);
+        Task DeleteAddressFromPerson(int personId);
     }
 }
- 
