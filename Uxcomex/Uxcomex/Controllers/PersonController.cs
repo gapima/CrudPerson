@@ -25,9 +25,9 @@ namespace Uxcomex.Controllers
         {
             return View();
         }
-        public async Task<IActionResult> UpdatePerson(PersonModel personModel, AddressModel address)
+        public async Task<IActionResult> UpdatePerson(PersonModel personModel, AddressModel addressModel)
         {
-            var person = await _personService.GetPersonById(address.PersonId);
+            var person = await _personService.GetPersonById(addressModel.PersonId > 0 ? addressModel.PersonId : personModel.Id);
 
             return View(person);
         }

@@ -1,0 +1,56 @@
+﻿<div class="modal fade" id="updateAddressModal" tabindex="-1" aria-labelledby="updateAddressModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateAddressModalLabel">Edit Address</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="updateAddressForm" asp-controller="Address" asp-action="Update" method="post">
+                    <input type="hidden" id="addressId" name="Id" />
+
+                    <div class="form-group">
+                        <label for="ZipCode">Zip Code</label>
+                        <input type="text" class="form-control" id="zipCode" name="ZipCode"  required />
+                    </div>
+                    <div class="form-group">
+                        <label for="StreetAddress">Street Address</label>
+                        <input type="text" class="form-control" id="streetAddress" name="StreetAddress"  required />
+                    </div>
+                    <div class="form-group">
+                        <label for="City">City</label>
+                        <input type="text" class="form-control" id="city" name="City"  required />
+                    </div>
+                    <div class="form-group">
+                        <label for="State">State</label>
+                        <input type="text" class="form-control" id="state" name="State"  required />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" form="updateAddressForm" asp-controller="Address" asp-action="Update" class="btn btn-primary">Save Address</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var updateAddressModal = document.getElementById('updateAddressModal');
+    updateAddressModal.addEventListener('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+
+    var id = button.getAttribute('data-id');
+    var zipcode = button.getAttribute('data-zipcode');
+    var streetAddress = button.getAttribute('data-streetaddress');
+    var city = button.getAttribute('data-city');
+    var state = button.getAttribute('data-state');
+
+    document.getElementById('addressId').value = id;
+    document.getElementById('zipCode').value = zipcode;
+    document.getElementById('streetAddress').value = streetAddress;
+    document.getElementById('city').value = city;
+    document.getElementById('state').value = state;
+});
+
+</script>

@@ -50,7 +50,17 @@
                         <td>@address.City</td>
                         <td>@address.State</td>
                         <td>
-                            <a asp-action="EditAddress" asp-route-id="@address.Id" class="btn btn-sm btn-primary">Edit</a>
+                            @*@<a asp-route-id="@address.Id" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#updateAddressModal"> Edit </a>*@
+                            <a class="btn btn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#updateAddressModal"
+                                    data-id="@address.Id"
+                                    data-zipcode="@address.Zipcode"
+                                    data-streetaddress="@address.StreetAddress"
+                                    data-city="@address.City"
+                                    data-state="@address.State">
+                                Edit
+                            </a>
                             <a asp-action="DeleteAddress" asp-route-id="@address.Id" class="btn btn-sm btn-danger">Delete</a>
                         </td>
                     </tr>
@@ -65,3 +75,4 @@
 </div>
 
 @await Html.PartialAsync("~/Views/Address/AddAddressModal.cshtml", Model)
+@await Html.PartialAsync("~/Views/Address/UpdateAddressModal.cshtml", Model)

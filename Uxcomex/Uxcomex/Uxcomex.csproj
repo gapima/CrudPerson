@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="Services\IPersonService.cs" />
+    <Compile Remove="Views\Address\UpdateAddressModal.cshtml.cs" />
   </ItemGroup>
 
   <ItemGroup>

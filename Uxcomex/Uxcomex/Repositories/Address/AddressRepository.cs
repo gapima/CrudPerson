@@ -88,8 +88,9 @@ namespace Uxcomex.Repositories.Address
 					Zipcode = @Zipcode,
 					City = @City,
 					State = @State
-				WHERE Id = @Id and PersonId = @PersonID";
-                var address = await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, new { id = addressDto.id, personId = addressDto.PersonId });
+                 OUTPUT INSERTED.Id, INSERTED.StreetAddress, INSERTED.Zipcode, INSERTED.City, INSERTED.State, INSERTED.PersonId
+				WHERE Id = @Id";
+                var address = await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, addressDto);
                 if (address == null)
                     throw new Exception();
                 return address;

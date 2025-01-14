@@ -28,15 +28,14 @@ namespace Uxcomex.Controllers
         public async Task<IActionResult> Create(AddressDto AddressDto)
         {
             var address = await _AddressService.CreateAddress(AddressDto);
-            //var person = await _personService.GetPersonById(address.PersonId);
             return RedirectToAction("UpdatePerson", "Person", address);
 
         }
         public async Task<IActionResult> Update(AddressDto AddressDto)
         {
-            await _AddressService.UpdateAddress(AddressDto);
+            var address = await _AddressService.UpdateAddress(AddressDto);
 
-            return RedirectToAction("Update");
+            return RedirectToAction("UpdatePerson", "Person", address);
         }
     }
 }
