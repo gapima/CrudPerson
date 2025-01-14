@@ -41,11 +41,5 @@ namespace Uxcomex.Controllers
             await _personService.UpdatePerson(personDto);
             return RedirectToAction("Index");
         }
-        //public async Task<IActionResult> GetAllAddressByPersonId(int personId)
-        //{
-        //    var addresses = await _addressService.GetAllAddressByPersonId(personId);
-
-        //    return RedirectToAction("UpdatePerson", addresses);
-        //}
     }
 }

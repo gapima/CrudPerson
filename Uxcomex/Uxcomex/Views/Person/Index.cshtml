@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PersonModel>
+﻿@* @model IEnumerable<PersonModel>
 
 <div class="container">
     <a href="@Url.Action("CreatePerson", "Person")" class="btn btn-primary">Add</a>
@@ -16,5 +16,71 @@
         {
             <p>No records found.</p>
         }
+    </div>
+</div>
+ *@
+
+ @model IEnumerable<PersonModel>
+
+<div class="container">
+    <a href="@Url.Action("CreatePerson", "Person")" class="btn btn-primary mb-3">Add Person</a>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>CPF</th>
+                    <th>Phone Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Any())
+                {
+                    foreach (var person in Model)
+                    {
+                        <tr>
+                            <td>@person.Name</td>
+                            <td>@person.Cpf</td>
+                            <td>@person.PhoneNumber</td>
+                            <td>
+                                <a href="@Url.Action("UpdatePerson", "Person", person)" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="javascript:void(0)" class="btn btn-sm btn-danger"
+                                   data-bs-toggle="modal" data-bs-target="#deletePersonModal"
+                                   data-id="@person.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center">No records found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal de Confirmação de Deletar -->
+<div class="modal fade" id="deletePersonModal" tabindex="-1" aria-labelledby="deletePersonModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deletePersonModalLabel">Confirm Deletion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this person?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form asp-controller="Person" asp-action="Delete" method="post" style="display: inline;">
+                    <input type="hidden" name="id" id="deletePersonId" />
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
