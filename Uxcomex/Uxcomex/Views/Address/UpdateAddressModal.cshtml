@@ -2,34 +2,34 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="updateAddressModalLabel">Edit Address</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="updateAddressModalLabel">Editar Endereço</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar"></button>
             </div>
             <div class="modal-body">
                 <form id="updateAddressForm" asp-controller="Address" asp-action="Update" method="post">
                     <input type="hidden" id="addressId" name="Id" />
 
                     <div class="form-group">
-                        <label for="ZipCode">Zip Code</label>
+                        <label for="ZipCode">CEP</label>
                         <input type="text" class="form-control" id="zipCode" name="ZipCode"  required />
                     </div>
                     <div class="form-group">
-                        <label for="StreetAddress">Street Address</label>
+                        <label for="StreetAddress">Logradouro</label>
                         <input type="text" class="form-control" id="streetAddress" name="StreetAddress"  required />
                     </div>
                     <div class="form-group">
-                        <label for="City">City</label>
+                        <label for="City">Cidade</label>
                         <input type="text" class="form-control" id="city" name="City"  required />
                     </div>
                     <div class="form-group">
-                        <label for="State">State</label>
+                        <label for="State">Estado</label>
                         <input type="text" class="form-control" id="state" name="State"  required />
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" form="updateAddressForm" asp-controller="Address" asp-action="Update" class="btn btn-primary">Save Address</button>
+                <button type="submit" form="updateAddressForm" asp-controller="Address" asp-action="Update" class="btn btn-primary">Salvar Endereço</button>
             </div>
         </div>
     </div>

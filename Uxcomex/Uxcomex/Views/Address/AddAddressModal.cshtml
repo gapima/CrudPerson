@@ -3,34 +3,34 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="addAddressModalLabel">Add New Address</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="addAddressModalLabel">Adicionar Endereço</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar"></button>
             </div>
             <div class="modal-body">
                 <form id="addAddressForm" asp-controller="Address" asp-action="Create" method="post">
                     <input type="hidden" name="PersonId" value="@Model.Id" />
 
                     <div class="form-group">
-                        <label for="ZipCode">Zip Code</label>
+                        <label for="ZipCode">CEP</label>
                         <input type="text" class="form-control" id="ZipCode" name="ZipCode" required />
                     </div>
                     <div class="form-group">
-                        <label for="StreetAddress">Street Address</label>
+                        <label for="StreetAddress">Logradouro</label>
                         <input type="text" class="form-control" id="StreetAddress" name="StreetAddress" required />
                     </div>
                     <div class="form-group">
-                        <label for="City">City</label>
+                        <label for="City">Cidade</label>
                         <input type="text" class="form-control" id="City" name="City" required />
                     </div>
                     <div class="form-group">
-                        <label for="State">State</label>
+                        <label for="State">Estado</label>
                         <input type="text" class="form-control" id="State" name="State" required />
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" form="addAddressForm" class="btn btn-primary">Save Address</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" form="addAddressForm" class="btn btn-primary">Salvar Endereço</button>
             </div>
         </div>
     </div>

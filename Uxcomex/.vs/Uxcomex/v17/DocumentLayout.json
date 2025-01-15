@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\person\\updateperson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\person\\updateperson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\person\\createperson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\person\\createperson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\address\\addaddressmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\address\\addaddressmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\address\\updateaddressmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\address\\updateaddressmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\address\\addaddressmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\address\\addaddressmodal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\views\\person\\updateperson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\views\\person\\updateperson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,71 +26,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Uxcomex\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Uxcomex\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T23:14:13.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdatePerson.cshtml",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\UpdatePerson.cshtml",
-              "RelativeDocumentMoniker": "Uxcomex\\Views\\Person\\UpdatePerson.cshtml",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\UpdatePerson.cshtml",
-              "RelativeToolTip": "Uxcomex\\Views\\Person\\UpdatePerson.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T23:13:29.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreatePerson.cshtml",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\CreatePerson.cshtml",
-              "RelativeDocumentMoniker": "Uxcomex\\Views\\Person\\CreatePerson.cshtml",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\CreatePerson.cshtml",
-              "RelativeToolTip": "Uxcomex\\Views\\Person\\CreatePerson.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T23:13:16.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "UpdateAddressModal.cshtml",
               "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Address\\UpdateAddressModal.cshtml",
               "RelativeDocumentMoniker": "Uxcomex\\Views\\Address\\UpdateAddressModal.cshtml",
               "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Address\\UpdateAddressModal.cshtml",
               "RelativeToolTip": "Uxcomex\\Views\\Address\\UpdateAddressModal.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T23:13:12.877Z",
+              "WhenOpened": "2025-01-15T00:43:46.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "AddAddressModal.cshtml",
               "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Address\\AddAddressModal.cshtml",
               "RelativeDocumentMoniker": "Uxcomex\\Views\\Address\\AddAddressModal.cshtml",
               "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Address\\AddAddressModal.cshtml",
               "RelativeToolTip": "Uxcomex\\Views\\Address\\AddAddressModal.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T23:13:05.224Z",
+              "WhenOpened": "2025-01-15T00:40:55.872Z",
               "EditorCaption": ""
             },
             {
@@ -109,9 +62,22 @@
               "RelativeDocumentMoniker": "Uxcomex\\Views\\Person\\Index.cshtml",
               "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\Index.cshtml",
               "RelativeToolTip": "Uxcomex\\Views\\Person\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-14T21:54:37.029Z",
+              "WhenOpened": "2025-01-15T00:22:59.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdatePerson.cshtml",
+              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\UpdatePerson.cshtml",
+              "RelativeDocumentMoniker": "Uxcomex\\Views\\Person\\UpdatePerson.cshtml",
+              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Views\\Person\\UpdatePerson.cshtml",
+              "RelativeToolTip": "Uxcomex\\Views\\Person\\UpdatePerson.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T00:22:58.726Z",
               "EditorCaption": ""
             }
           ]
