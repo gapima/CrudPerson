@@ -20,9 +20,10 @@ namespace Uxcomex.Repositories.Address
         {
             try
             {
-                var query = @"INSERT INTO Tb_Address
-                OUTPUT INSERTED.Id, INSERTED.StreetAddress, INSERTED.Zipcode, INSERTED.City, INSERTED.State, INSERTED.PersonId
-                VALUES (@StreetAddress, @Zipcode, @City, @State, @PersonId)";
+                var query = @"
+                    INSERT INTO Tb_Address(StreetAddress, Zipcode, City, State, PersonId)
+                    OUTPUT INSERTED.Id, INSERTED.StreetAddress, INSERTED.Zipcode, INSERTED.City, INSERTED.State, INSERTED.PersonId
+                    VALUES(@StreetAddress, @Zipcode, @City, @State, @PersonId)";
                 var address = await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, addressDto);
                 if (address == null)
                     throw new Exception();
@@ -83,13 +84,14 @@ namespace Uxcomex.Repositories.Address
         {
             try
             {
-                var query = @"UPDATE Tb_Address 
-				SET StreetAddress = @StreetAddress,
-					Zipcode = @Zipcode,
-					City = @City,
-					State = @State
-                 OUTPUT INSERTED.Id, INSERTED.StreetAddress, INSERTED.Zipcode, INSERTED.City, INSERTED.State, INSERTED.PersonId
-				WHERE Id = @Id";
+                var query = @"
+                    UPDATE Tb_Address
+                    SET StreetAddress = @StreetAddress,
+                        Zipcode = @Zipcode,
+                        City = @City,
+                        State = @State
+                    OUTPUT INSERTED.Id, INSERTED.StreetAddress, INSERTED.Zipcode, INSERTED.City, INSERTED.State, INSERTED.PersonId
+                    WHERE Id = @Id";
                 var address = await _connection.QueryFirstOrDefaultAsync<AddressModel>(query, addressDto);
                 if (address == null)
                     throw new Exception();
@@ -100,30 +102,5 @@ namespace Uxcomex.Repositories.Address
                 throw new Exception(ex.Message);
             }
         }
-        //public async Task<ActionResult> BuscarEndereco(string cep)
-        //{
-        //    if (string.IsNullOrEmpty(cep))
-        //    {
-        //        return Json(new { success = false, message = "CEP não informado." });
-        //    }
-
-        //    try
-        //    {
-        //        var response = await _httpClient.GetAsync($"https://api.exemplo.com/cep/{cep}");
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            var endereco = await response.Content.ReadAsAsync<Endereco>();
-        //            return Json(new { success = true, endereco });
-        //        }
-        //        else
-        //        {
-        //            return Json(new { success = false, message = "CEP não encontrado." });
-        //        }
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return Json(new { success = false, message = "Erro ao consultar a API." });
-        //    }
-        //}
     }
 }

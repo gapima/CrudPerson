@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\repositories\\address\\addressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\repositories\\address\\addressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\models\\addressmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\models\\addressmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|c:\\users\\gapim\\myprojects\\crudperson\\uxcomex\\uxcomex\\repositories\\person\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{799CE3BF-6D77-4176-BDA2-B7E0F557487E}|Uxcomex\\Uxcomex.csproj|solutionrelative:uxcomex\\repositories\\person\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddressModel.cs",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Models\\AddressModel.cs",
-              "RelativeDocumentMoniker": "Uxcomex\\Models\\AddressModel.cs",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Models\\AddressModel.cs",
-              "RelativeToolTip": "Uxcomex\\Models\\AddressModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAcwAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T02:21:19.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddressRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Repositories\\Address\\AddressRepository.cs",
-              "RelativeDocumentMoniker": "Uxcomex\\Repositories\\Address\\AddressRepository.cs",
-              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Repositories\\Address\\AddressRepository.cs",
-              "RelativeToolTip": "Uxcomex\\Repositories\\Address\\AddressRepository.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAowH4AAAALAAAAAAAAAA==",
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Repositories\\Person\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "Uxcomex\\Repositories\\Person\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\gapim\\myprojects\\CrudPerson\\Uxcomex\\Uxcomex\\Repositories\\Person\\PersonRepository.cs",
+              "RelativeToolTip": "Uxcomex\\Repositories\\Person\\PersonRepository.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwG4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T02:20:09.852Z",
+              "WhenOpened": "2025-01-15T05:07:51.842Z",
               "EditorCaption": ""
             }
           ]

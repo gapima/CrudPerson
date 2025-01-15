@@ -20,9 +20,10 @@ namespace Uxcomex.Repositories.Person
         {
             try
             {
-                var query = @"INSERT INTO Tb_Person
-                OUTPUT INSERTED.Id, INSERTED.Name, INSERTED.PhoneNumber, INSERTED.Cpf
-    			VALUES (@Name, @PhoneNumber, @Cpf);";
+                var query = @"
+                    INSERT INTO Tb_Person
+                    OUTPUT INSERTED.Id, INSERTED.Name, INSERTED.PhoneNumber, INSERTED.Cpf
+                    VALUES (@Name, @PhoneNumber, @Cpf);";
                 var person = await _connection.QuerySingleOrDefaultAsync<PersonModel>(query, personDto);
                 if (person == null)
                     throw new Exception();
@@ -75,16 +76,12 @@ namespace Uxcomex.Repositories.Person
 
             try
             {
-                var query = @"SELECT *
-                FROM Tb_Person
-                WHERE id = @id";
+                var query = @"SELECT * FROM Tb_Person WHERE id = @id";
                 var person = await _connection.QueryFirstOrDefaultAsync<PersonModel>(query, new { Id = id });
 
                 if (person == null)
                     throw new Exception();
-                var queryAdrees = @"SELECT *
-                FROM Tb_Address
-                WHERE PersonId = @id ORDER By Id Desc";
+                var queryAdrees = @"SELECT * FROM Tb_Address WHERE PersonId = @id ORDER By Id Desc";
                 var address = await _connection.QueryAsync<AddressModel>(queryAdrees, new { id = id });
                 person.Addresses = address;
                 return person;
@@ -99,12 +96,13 @@ namespace Uxcomex.Repositories.Person
             try
             {
 
-                var query = @"UPDATE Tb_Person 
-				SET Name = @Name,
-					PhoneNumber = @PhoneNumber,
-					Cpf = @Cpf 
-                 OUTPUT INSERTED.Id, INSERTED.Name, INSERTED.PhoneNumber, INSERTED.Cpf
-				WHERE Id = @Id";
+                var query = @"
+                    UPDATE Tb_Person 
+                    SET Name = @Name,
+                        PhoneNumber = @PhoneNumber,
+                        Cpf = @Cpf 
+                    OUTPUT INSERTED.Id, INSERTED.Name, INSERTED.PhoneNumber, INSERTED.Cpf
+                    WHERE Id = @Id";
                 var person = await _connection.QueryFirstOrDefaultAsync<PersonModel>(query, personDto);
 
                 if (person == null)
