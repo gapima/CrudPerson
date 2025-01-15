@@ -31,4 +31,4 @@ O projeto consiste em uma aplicação **ASP.NET MVC** que permite realizar opera
 
 1. Clone este repositório:
    ```bash
-   git clone [git@github.com:gapima/CrudPerson.git]
+   git clone git@github.com:gapima/CrudPerson.git
