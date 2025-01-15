@@ -100,5 +100,30 @@ namespace Uxcomex.Repositories.Address
                 throw new Exception(ex.Message);
             }
         }
+        //public async Task<ActionResult> BuscarEndereco(string cep)
+        //{
+        //    if (string.IsNullOrEmpty(cep))
+        //    {
+        //        return Json(new { success = false, message = "CEP não informado." });
+        //    }
+
+        //    try
+        //    {
+        //        var response = await _httpClient.GetAsync($"https://api.exemplo.com/cep/{cep}");
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            var endereco = await response.Content.ReadAsAsync<Endereco>();
+        //            return Json(new { success = true, endereco });
+        //        }
+        //        else
+        //        {
+        //            return Json(new { success = false, message = "CEP não encontrado." });
+        //        }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return Json(new { success = false, message = "Erro ao consultar a API." });
+        //    }
+        //}
     }
 }
